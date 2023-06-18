@@ -1,5 +1,11 @@
+import ContactBlock from "@/components/contact-page/ContactBlock";
+
 const ContactsPage = () => {
-  return <div>Hi i ContactsPage</div>;
+  return (
+    <>
+      <ContactBlock />
+    </>
+  );
 };
 
 export default ContactsPage;

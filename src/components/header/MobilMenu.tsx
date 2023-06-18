@@ -2,6 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../logo/Logo";
+import Link from "next/link";
 
 interface MobilMenuProps {
   navlist: { name: string; href: string }[];
@@ -49,13 +50,14 @@ const MobilMenu: React.FC<MobilMenuProps> = ({ open, setOpen, navlist }) => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navlist.map((item) => (
-                    <a
+                    <Link
+                      onClick={() => setOpen(false)}
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-6">

@@ -14,7 +14,7 @@ const ElementPhoto: React.FC<ElementPhotoProps> = ({ imgSrc }) => {
         height={300}
         className="aspect-[2/3] w-full h-auto rounded-xl object-cover shadow-lg"
       />
-      <div className="absolute inset-0 rounded-xl ring-1 ring-gray-600"></div>
+      <div className="absolute inset-0 rounded-xl ring-1 ring-gray-300"></div>
     </div>
   );
 };

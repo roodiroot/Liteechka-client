@@ -1,5 +1,11 @@
+import GaleryBlock from "@/components/galery/GaleryBlock";
+
 const GaleryPage = () => {
-  return <div>Hi i prices</div>;
+  return (
+    <>
+      <GaleryBlock />
+    </>
+  );
 };
 
 export default GaleryPage;
