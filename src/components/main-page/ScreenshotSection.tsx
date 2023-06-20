@@ -7,27 +7,29 @@ import {
 import Image from "next/image";
 
 const ScreenshotSection = () => {
-
   const materials = [
     {
       id: 1,
       Icon: FingerPrintIcon,
       title: "Металлический профиль. ",
-      description: "Обладает высокой прочностью и устойчивостью к повреждениям, что гарантирует их долговечность и минимальную необходимость в ремонте."
+      description:
+        "Обладает высокой прочностью и устойчивостью к повреждениям, что гарантирует их долговечность и минимальную необходимость в ремонте.",
     },
     {
       id: 2,
       Icon: CloudArrowUpIcon,
       title: "Поликарбонат. ",
-      description: "Обладает высокой прочностью и пропускает свет, что делает его идеальным материалом для изготовления крыш и навесов."
+      description:
+        "Обладает высокой прочностью и пропускает свет, что делает его идеальным материалом для изготовления крыш и навесов.",
     },
     {
       id: 3,
       Icon: LockClosedIcon,
       title: "Фурнитура. ",
-      description: "Термошайбы, заглушки и торцевые профили обеспечивают долговечность и защиту от протечек, грязи и мусора в конструкции Вашего навеса."
+      description:
+        "Термошайбы, заглушки и торцевые профили обеспечивают долговечность и защиту от протечек, грязи и мусора в конструкции Вашего навеса.",
     },
-  ]
+  ];
 
   return (
     <div className="py-24 sm:py-32 relative">
@@ -65,25 +67,23 @@ const ScreenshotSection = () => {
                 Материалы для навесов
               </h2>
               <p className="text-lg leading-8 text-gray-600 mt-6">
-              Изготавливаются из&nbsp;высококачественных материалов, которые имеют сертификаты качества и&nbsp;обеспечивают максимальную надежность конструкций.
+                Изготавливаются из&nbsp;высококачественных материалов, которые
+                имеют сертификаты качества и&nbsp;обеспечивают максимальную
+                надежность конструкций.
               </p>
               <dl className="mt-10 max-w-xl lg:max-w-none text-gray-600 text-base leading-7">
-                {
-                  materials.map(m => (
-                    <div className="relative pl-10 mt-8">
-                  <m.Icon
-                    className="absolute w-5 h-5 top-1 left-1 text-lime-500"
-                    aria-hidden="true"
-                  />
-                  <span className="font-semibold text-gray-900 ">
-                    {m.title}
-                  </span>
-                  <span>
-                    {m.description}
-                  </span>
-                </div>
-                  ))
-                }
+                {materials.map((m) => (
+                  <div className="relative pl-10 mt-8">
+                    <m.Icon
+                      className="absolute w-5 h-5 top-1 left-1 text-lime-500"
+                      aria-hidden="true"
+                    />
+                    <span className="font-semibold text-gray-900 ">
+                      {m.title}
+                    </span>
+                    <span>{m.description}</span>
+                  </div>
+                ))}
               </dl>
             </div>
           </div>

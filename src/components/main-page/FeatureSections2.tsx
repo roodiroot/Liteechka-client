@@ -1,9 +1,3 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-} from "@heroicons/react/24/outline";
 import Image from "next/image";
 import FeatureElement from "./FeatureElement";
 
@@ -12,27 +6,26 @@ const features = [
     id: 1,
     title: "Навес для автообилей",
     description:
-      "Навес для автомобиля защищает автомобиль от погодных условий, таких как солнце, дождь, снег и другие неблагоприятные погодные явления.",
+      "Защищает автомобиль от погодных условий, таких как солнце, дождь, снег и другие неблагоприятные погодные явления.",
     price: "₽40,000 RUB",
-    location: "Саранск Мордовия"
+    location: "Саранск Мордовия",
   },
   {
     id: 2,
     title: "Навес над крыльцом",
     description:
-      "Навес, выполненный в эстетичном стиле, способен значительно улучшить внешний вид здания, придавая ему солидность и индивидуальность.",
+      "Выполненный в эстетичном стиле, способен значительно улучшить внешний вид здания, придавая ему солидность и индивидуальность.",
     price: "₽15,000 RUB",
-    location: "Лямбирь Мордовия"
+    location: "Лямбирь Мордовия",
   },
   {
     id: 3,
     title: "Промышленные навесы",
     description:
-      "важный элемент строительства, который широко используется на производственных и торговых объектах для защиты от погоды и создания комфортных условий.",
+      "Важный элемент строительства, который широко используется на производственных и торговых объектах для защиты от погоды и создания комфортных условий.",
     price: "₽40,000 RUB",
-    location: "Саранск Мордовия"
+    location: "Саранск Мордовия",
   },
-
 ];
 
 const FeatureSections2 = () => {
@@ -45,7 +38,9 @@ const FeatureSections2 = () => {
               Красивые и&nbsp;надежные навесы на&nbsp;вашем участке
             </h2>
             <p className="mt-10 text-lg leading-8 text-gray-600">
-              Мы&nbsp;изготавливаем и&nbsp;монтируем навесы любой сложности и&nbsp;назначения, подходящие под ваши индивидуальные размеры и&nbsp;требования.
+              Мы&nbsp;изготавливаем и&nbsp;монтируем навесы любой сложности
+              и&nbsp;назначения, подходящие под ваши индивидуальные размеры
+              и&nbsp;требования.
             </p>
             <Image
               src="/image/main/8.jpg"
@@ -58,11 +53,15 @@ const FeatureSections2 = () => {
           <div className="w-full lg:max-w-lg lg:flex-auto">
             <h3 className="sr-only">Наши работы</h3>
             <ul className="-my-8">
-              {
-                features.map(f => (
-                  <FeatureElement key={f.id} title={f.title} description={f.description} price={f.price} location={f.location}   />
-                ))
-              }
+              {features.map((f) => (
+                <FeatureElement
+                  key={f.id}
+                  title={f.title}
+                  description={f.description}
+                  price={f.price}
+                  location={f.location}
+                />
+              ))}
             </ul>
             <div className="mt-8 flex pt-8">
               <a

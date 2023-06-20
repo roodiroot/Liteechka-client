@@ -62,10 +62,10 @@ const MobilMenu: React.FC<MobilMenuProps> = ({ open, setOpen, navlist }) => {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="tel:+79875704514"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Log in
+                    +7 (987) 570-4514
                   </a>
                 </div>
               </div>

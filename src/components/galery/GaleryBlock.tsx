@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProjectComponent from "./ProjectComponent";
 
 const GaleryBlock = () => {
@@ -7,14 +6,14 @@ const GaleryBlock = () => {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-      date: "Mar 16, 2020",
-      group: "Marketing",
-      title: "Boost your conversion rate",
+      date: "Март 16, 2022",
+      group: "Установка",
+      title: "Установка навеса для автомобиля",
       description:
-        "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+        "Мы установили навес из поликарбоната и металла для автомобиля на частной территории, что защитило автомобиль от дождя и солнечных лучей, продлив его срок службы.",
       responsible: {
-        name: "Michael Foster",
-        job: "Co-Founder / CTO",
+        name: "Киушкин Игорь",
+        job: "Мастер проекта",
         img: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
     },
@@ -22,14 +21,14 @@ const GaleryBlock = () => {
       id: 2,
       image:
         "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
-      date: "Mar 16, 2020",
-      group: "Marketing",
-      title: "Boost your conversion rate",
+      date: "Июль 10, 2022",
+      group: "Монтаж",
+      title: "Беседка из поликарбната в Берсеневке",
       description:
-        "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+        "Реализовали проект по созданию беседки. Мы провели бесплатный замер и консультацию с заказчиком, чтобы понять его потребности и пожелания. Наши специалисты разработали проект, который полностью соответствовал требованиям заказчика, и начали работу по созданию беседки.",
       responsible: {
-        name: "Michael Foster",
-        job: "Co-Founder / CTO",
+        name: "Борисов максим",
+        job: "Менеджер пректа",
         img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
     },
@@ -37,14 +36,14 @@ const GaleryBlock = () => {
       id: 3,
       image:
         "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
-      date: "Mar 16, 2020",
-      group: "Marketing",
-      title: "Boost your conversion rate",
+      date: "Сентабрь 3, 2022",
+      group: "Монтаж",
+      title: "Монтаж проекта навеса для автомобиля",
       description:
-        "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+        "Мы успешно реализовали проект по монтажу навеса для автомобиля размером 6 на 12 метров, который предназначен для защиты двух автомобилей от погодных условий. Для создания навеса мы использовали 10 ферм, которые обеспечили надежную и прочную конструкцию.",
       responsible: {
-        name: "Michael Foster",
-        job: "Co-Founder / CTO",
+        name: "Киушкин Игорь",
+        job: "Менеджер пректа",
         img: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
     },
@@ -57,8 +56,8 @@ const GaleryBlock = () => {
             Проектная галерея
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Навесы и металлоконструкции: надежная защита и эстетическая
-            привлекательность.
+            Посмотрите нашу портфолио проектов и&nbsp;убедитесь в&nbsp;качестве
+            нашей работы.
           </p>
           <div className="mt-16 lg:mt-20">
             {projects.map((proj) => (

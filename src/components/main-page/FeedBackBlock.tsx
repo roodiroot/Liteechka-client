@@ -8,7 +8,8 @@ const FeedBackBlock = () => {
           Узнайте больше о наших навесах.
         </h2>
         <p className="mt-2 mx-auto text-center max-w-xl text-lg leading-8 text-gray-300">
-          Заполните форму обратной связи прямо сейчас, чтобы заказать бесплатную консультацию.
+          Заполните форму обратной связи прямо сейчас, чтобы заказать бесплатную
+          консультацию.
         </p>
         <form action="" className="max-w-md mt-10 mx-auto flex gap-4">
           <label htmlFor="emailAdres" className="sr-only">

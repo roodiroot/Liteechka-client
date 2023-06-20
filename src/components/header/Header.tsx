@@ -6,14 +6,7 @@ import MobilMenu from "./MobilMenu";
 import Logo from "../logo/Logo";
 import { useWindowScroll } from "@/hooks/useWindowScroll";
 import MenuLink from "./MenuLink";
-
-const navigation = [
-  { name: "Главная", href: "/" },
-  { name: "Наши работы", href: "/galery" },
-  // { name: "Цены", href: "/prices" },
-  { name: "О компании", href: "/about" },
-  { name: "Контакты", href: "/contacts" },
-];
+import { navigation } from "@/constanse";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -51,8 +44,11 @@ const Header = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a
+            href="tel:+79875704514"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            +7 (987) 570-4514
           </a>
         </div>
         <MobilMenu

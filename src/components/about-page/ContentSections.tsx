@@ -6,6 +6,29 @@ import {
 import Image from "next/image";
 
 const ContentSections = () => {
+  const materials = [
+    {
+      id: 1,
+      Icon: FingerPrintIcon,
+      title: "Замер на месте. ",
+      description:
+        "Предлагаем услугу замера на месте и работаем только после полного согласования макета с нашим клиентом.",
+    },
+    {
+      id: 2,
+      Icon: CloudArrowUpIcon,
+      title: "Материалы. ",
+      description:
+        "Используем только сертифицированные материалы, которые гарантируют максимальную надежность наших навесов.",
+    },
+    {
+      id: 3,
+      Icon: LockClosedIcon,
+      title: "Гарантия. ",
+      description:
+        "Мы уверены в качестве наших металлоконструкций и предоставляем гарантию на наши навесы до трех лет.",
+    },
+  ];
   return (
     <div className="pt-[74px]">
       <div className="relative bg-white">
@@ -32,82 +55,52 @@ const ContentSections = () => {
                 Взгляните внутрь нашей компании
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-                scelerisque eget. Eleifend egestas fringilla sapien.
+                &laquo;Liteechka&raquo; занимается производством и&nbsp;монтажом
+                надежных навесов из&nbsp;поликарбоната, предоставляя услуги
+                по&nbsp;проектированию, консультации в&nbsp;Республике Мордовия.
               </p>
               <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none ">
                 <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
+                  &laquo;Liteechka&raquo; была основана в&nbsp;2018&nbsp;году.
+                  Она начала свою деятельность с&nbsp;небольшого монтажного
+                  цеха, занимавшегося установкой навесов из&nbsp;поликарбоната
+                  на&nbsp;территории республики. С&nbsp;течением времени
+                  компания расширила свою деятельность и&nbsp;начала
+                  производство навесов из&nbsp;поликарбоната на&nbsp;собственном
+                  производственном участке.
                 </p>
                 <dl className="mt-10 max-w-xl lg:max-w-none text-gray-600 text-base leading-7">
-                  <div className="relative pl-10">
-                    <CloudArrowUpIcon
-                      className="absolute w-5 h-5 top-1 left-1 text-lime-500"
-                      aria-hidden="true"
-                    />
-                    <span className="font-semibold text-gray-900">
-                      Push to deploy.
-                    </span>
-                    <span>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
-                    </span>
-                  </div>
-                  <div className="relative pl-10 mt-8">
-                    <FingerPrintIcon
-                      className="absolute w-5 h-5 top-1 left-1 text-lime-500"
-                      aria-hidden="true"
-                    />
-                    <span className="font-semibold text-gray-900 ">
-                      Push to deploy.
-                    </span>
-                    <span>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
-                    </span>
-                  </div>
-                  <div className="relative pl-10 mt-8">
-                    <LockClosedIcon
-                      className="absolute w-5 h-5 top-1 left-1 text-lime-500"
-                      aria-hidden="true"
-                    />
-                    <span className="font-semibold text-gray-900 ">
-                      Push to deploy.
-                    </span>
-                    <span>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
-                    </span>
-                  </div>
+                  {materials.map((m) => (
+                    <div className="relative pl-10 mt-8">
+                      <m.Icon
+                        className="absolute w-5 h-5 top-1 left-1 text-lime-500"
+                        aria-hidden="true"
+                      />
+                      <span className="font-semibold text-gray-900">
+                        {m.title}
+                      </span>
+                      <span>{m.description}</span>
+                    </div>
+                  ))}
                 </dl>
               </div>
               <div className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
+                Компания &laquo;Liteechka&raquo; известна своим качественным
+                продуктом и&nbsp;высоким уровнем обслуживания. Она работает
+                с&nbsp;клиентами из&nbsp;различных отраслей, включая частных
+                клиентов, архитекторов, строительные компании и&nbsp;торговые
+                сети.
               </div>
               <h2 className="mt-24 text-2xl font-bold -space-x-1 text-gray-900 ">
-                No server? No problem.
+                Гарантия качества.
               </h2>
               <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+                Кроме того, компания &laquo;Liteechka&raquo; предоставляет
+                бесплатный замер и&nbsp;консультацию для своих клиентов, что
+                помогает им&nbsp;выбрать наиболее подходящее решение для своих
+                нужд. Также компания дает гарантию на&nbsp;свои проекты
+                до&nbsp;трех лет, что говорит о&nbsp;высоком качестве продукции
+                и&nbsp;уверенности в&nbsp;своих специалистах.
               </p>
             </div>
           </div>

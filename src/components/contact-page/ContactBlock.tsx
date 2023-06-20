@@ -1,14 +1,13 @@
 "use client";
 import {
-  BuildingLibraryIcon,
   BuildingOffice2Icon,
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
 import Button from "../utils/Button";
+import Link from "next/link";
 
 const ContactBlock = () => {
   const [agreed, setAgreed] = useState(false);
@@ -52,12 +51,13 @@ const ContactBlock = () => {
               </svg>
             </div>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Get in touch
+              Контакты для связи
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              Если у&nbsp;вас есть какие-либо вопросы или комментарии,
+              мы&nbsp;будем рады их&nbsp;услышать. Пожалуйста, заполните форму
+              обратной связи, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+              в&nbsp;ближайшее время.
             </p>
             <dl className="mt-10 leading-7 text-gray-600">
               <div className="flex gap-x-4 [&:not(first)]:mt-4">
@@ -66,7 +66,7 @@ const ContactBlock = () => {
                   <BuildingOffice2Icon className="w-6 h-6 text-gray-600" />
                 </dt>
                 <dd>
-                  545 Mavis Island <br /> Chicago, IL 99191
+                  Рабочая 185, Саранск <br /> Мордовия 430034
                 </dd>
               </div>
               <div className="flex gap-x-4 [&:not(first)]:mt-4">
@@ -94,7 +94,7 @@ const ContactBlock = () => {
                   htmlFor="first-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  First name
+                  Имя
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -111,7 +111,7 @@ const ContactBlock = () => {
                   htmlFor="last-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Last name
+                  Фамилия
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -125,27 +125,10 @@ const ContactBlock = () => {
               </div>
               <div className="sm:col-span-2">
                 <label
-                  htmlFor="company"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Company
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="company"
-                    id="company"
-                    autoComplete="organization"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-lime-500 outline-0 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
                   htmlFor="email"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Email
+                  Электронная почта
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -162,7 +145,7 @@ const ContactBlock = () => {
                   htmlFor="number"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Phone number
+                  Номер телефона
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -179,7 +162,7 @@ const ContactBlock = () => {
                   htmlFor="message"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Message
+                  Сообщение
                 </label>
                 <div className="mt-2.5">
                   <textarea
@@ -201,7 +184,9 @@ const ContactBlock = () => {
                 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-500
                 `}
                   >
-                    <span className="sr-only">Agree to policies</span>
+                    <span className="sr-only">
+                      Политика по использованию персональных данных.
+                    </span>
                     <span
                       aria-hidden="true"
                       className={`
@@ -212,10 +197,10 @@ const ContactBlock = () => {
                   </Switch>
                 </div>
                 <Switch.Label className="text-sm leading-6 text-gray-600">
-                  By selecting this, you agree to our{" "}
-                  <a href="#" className="font-semibold text-lime-500">
-                    privacy&nbsp;policy
-                  </a>
+                  Согласие с{" "}
+                  <Link href="/privacy" className="font-semibold text-lime-500">
+                    Политикой конфиденциальности
+                  </Link>
                   .
                 </Switch.Label>
               </Switch.Group>

@@ -1,32 +1,20 @@
+import Link from "next/link";
+import { navigation } from "@/constanse";
+
 const Footer = () => {
   return (
     <div className="max-w-7xl w-full mx-auto mt-40 overflo-hidden px-6 pb-20 sm:pb-24 sm:mt-64 ">
       <div className="sm:flex columns-2 sm:justify-center -mb-6 sm:space-x-12">
-        <div className="pb-6">
-          <a href="" className="text-gray-600 text-xs leading-6">
-            Blog
-          </a>
-        </div>
-        <div className="pb-6">
-          <a href="" className="text-gray-600 text-xs leading-6">
-            Jobs
-          </a>
-        </div>
-        <div className="pb-6">
-          <a href="" className="text-gray-600 text-xs leading-6">
-            Press
-          </a>
-        </div>
-        <div className="pb-6">
-          <a href="" className="text-gray-600 text-xs leading-6">
-            Accessibility
-          </a>
-        </div>
-        <div className="pb-6">
-          <a href="" className="text-gray-600 text-xs leading-6">
-            Partners
-          </a>
-        </div>
+        {navigation.map((nav) => (
+          <div className="pb-6">
+            <Link
+              href={nav.href}
+              className="transition text-gray-600 text-xs leading-6 hover:text-gray-500"
+            >
+              {nav.name}
+            </Link>
+          </div>
+        ))}
       </div>
       <div className="mt-10 justify-center flex space-x-12">
         <a href="" className="text-inherit text-gray-600 ">
@@ -73,7 +61,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="mt-8 text-center text-xs text-gray-600 leading-6">
-        © 2020 Your Company, Inc. All rights reserved.
+        © 2023 Liteechka, <Link href="/privacy">Все права защищены</Link>.
       </div>
     </div>
   );
