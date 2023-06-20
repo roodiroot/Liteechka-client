@@ -7,6 +7,28 @@ import {
 import Image from "next/image";
 
 const ScreenshotSection = () => {
+
+  const materials = [
+    {
+      id: 1,
+      Icon: FingerPrintIcon,
+      title: "Металлический профиль. ",
+      description: "Обладает высокой прочностью и устойчивостью к повреждениям, что гарантирует их долговечность и минимальную необходимость в ремонте."
+    },
+    {
+      id: 2,
+      Icon: CloudArrowUpIcon,
+      title: "Поликарбонат. ",
+      description: "Обладает высокой прочностью и пропускает свет, что делает его идеальным материалом для изготовления крыш и навесов."
+    },
+    {
+      id: 3,
+      Icon: LockClosedIcon,
+      title: "Фурнитура. ",
+      description: "Термошайбы, заглушки и торцевые профили обеспечивают долговечность и защиту от протечек, грязи и мусора в конструкции Вашего навеса."
+    },
+  ]
+
   return (
     <div className="py-24 sm:py-32 relative">
       <svg
@@ -37,59 +59,31 @@ const ScreenshotSection = () => {
           <div className="px-6 lg:px-0 lg:pt-4 lg:pr-4">
             <div className="max-w-2xl mx-auto lg:max-w-lg lg:mx-0">
               <p className="text-base font-semibold leading-7 text-lime-500">
-                Deploy faster
+                Производство
               </p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                A better workflow
+                Материалы для навесов
               </h2>
               <p className="text-lg leading-8 text-gray-600 mt-6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+              Изготавливаются из&nbsp;высококачественных материалов, которые имеют сертификаты качества и&nbsp;обеспечивают максимальную надежность конструкций.
               </p>
               <dl className="mt-10 max-w-xl lg:max-w-none text-gray-600 text-base leading-7">
-                <div className="relative pl-10">
-                  <CloudArrowUpIcon
-                    className="absolute w-5 h-5 top-1 left-1 text-lime-500"
-                    aria-hidden="true"
-                  />
-                  <span className="font-semibold text-gray-900">
-                    Push to deploy.
-                  </span>
-                  <span>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
-                  </span>
-                </div>
-                <div className="relative pl-10 mt-8">
-                  <FingerPrintIcon
+                {
+                  materials.map(m => (
+                    <div className="relative pl-10 mt-8">
+                  <m.Icon
                     className="absolute w-5 h-5 top-1 left-1 text-lime-500"
                     aria-hidden="true"
                   />
                   <span className="font-semibold text-gray-900 ">
-                    Push to deploy.
+                    {m.title}
                   </span>
                   <span>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    {m.description}
                   </span>
                 </div>
-                <div className="relative pl-10 mt-8">
-                  <LockClosedIcon
-                    className="absolute w-5 h-5 top-1 left-1 text-lime-500"
-                    aria-hidden="true"
-                  />
-                  <span className="font-semibold text-gray-900 ">
-                    Push to deploy.
-                  </span>
-                  <span>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
-                  </span>
-                </div>
+                  ))
+                }
               </dl>
             </div>
           </div>

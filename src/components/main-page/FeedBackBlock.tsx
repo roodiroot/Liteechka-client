@@ -5,11 +5,10 @@ const FeedBackBlock = () => {
     <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-24 sm:pt-32 isolation-auto">
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:rounded-3xl shadow-2xl sm:px-24 lg:px-32">
         <h2 className="text-white mx-auto max-w-2xl text-center text-3xl sm:text-4xl font-bold tracking-tight">
-          Get notified when we’re launching.
+          Узнайте больше о наших навесах.
         </h2>
         <p className="mt-2 mx-auto text-center max-w-xl text-lg leading-8 text-gray-300">
-          Reprehenderit ad esse et non officia in nulla. Id proident tempor
-          incididunt nostrud nulla et culpa.
+          Заполните форму обратной связи прямо сейчас, чтобы заказать бесплатную консультацию.
         </p>
         <form action="" className="max-w-md mt-10 mx-auto flex gap-4">
           <label htmlFor="emailAdres" className="sr-only">
@@ -18,7 +17,7 @@ const FeedBackBlock = () => {
           <input
             type="text"
             className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white ring-1 ring-inset ring-white/10 sm:text-sm sm:leading-6 placeholder:font-light placeholder:text-white/50"
-            placeholder="Enter your email"
+            placeholder="Введите ваш номер телефона"
           />
           <Button style="white" label="Отправить" />
         </form>

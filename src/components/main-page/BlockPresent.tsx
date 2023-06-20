@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../utils/Button";
 import ElementPhoto from "./ElementPhoto";
 
@@ -32,21 +33,19 @@ const BlockPresent = () => {
           <div className="max-w-2xl mx-auto lg:flex gap-x-14 lg:max-w-none lg:items-center lg:mx-0">
             <div className="shrink-0 mx-auto max-w-xl lg:mx-0">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Производство и монтаж навесов в Мордовии
+                Производство и&nbsp;монтаж навесов из&nbsp;поликарбоната
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-[28rem]">
-                Идеальная защита и стильные навесы для вашего дома и бизнеса.
-                Индивидуальный дизайн. Профессиональный монтаж. Надежность и
-                качество материалов.
+                Производство в&nbsp;Саранске, где работают высококвалифицированные специалисты и&nbsp;используется современное профессиональное оборудование.
               </p>
               <div className="mt-10 flex items-center justify-start gap-x-6">
                 <Button label="Консультация" />
-                <a
-                  href="#"
+                <Link
+                  href="/galery"
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+                  Смотреть все <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </div>
             <div className="w-full mt-14 flex gap-8 sm:justify-start sm:pl-20 lg:pl-0 lg:mt-0">

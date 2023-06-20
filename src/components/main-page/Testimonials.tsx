@@ -3,57 +3,57 @@ import Image from "next/image";
 const Testimonials = () => {
   const testemonials = [
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Отличный навес из поликарбоната! Установка прошла быстро и качественно. Рекомендую компанию!”",
+      name: "Александр Иванов",
+      date: "Зубова Поляна",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Компания предоставила профессиональный сервис и установила надежный навес на моей террасе. Очень доволен результатом!”",
+      name: "Екатерина Смирнова",
+      date: "Краснослободск",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Надежный навес из поликарбоната для моего автомобиля. Компания работает профессионально и качественно!”",
+      name: "Михаил Петров",
+      date: "Инсар",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Компания предоставила отличный сервис и установила качественный навес на моем дачном участке. Рекомендую!”",
+      name: "Анна Кузнецова",
+      date: "Ковылкино",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Профессиональная установка надежного навеса из поликарбоната на моей террасе. Компания работает качественно и ответственно!”",
+      name: "Дмитрий Соколов",
+      date: "Рузаевка",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Заказал навес из поликарбоната для своего автомобиля в компании и не пожалел! Качественный материал и профессиональный монтаж.”",
+      name: "Наталья Михайлова",
+      date: "Темников",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Компания предоставила отличный сервис и установила надежный навес на моей террасе в короткие сроки. Рекомендую!”",
+      name: "Илья Федоров",
+      date: "Ромоданово",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Надежный навес из поликарбоната для моего дачного участка. Установка прошла быстро и качественно. Спасибо компании!”",
+      name: "Сергей Козлов",
+      date: "Лямбирь",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
     {
-      text: "“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”",
-      name: "Leslie Alexander",
-      date: "@lindsaywalton",
+      text: "“Компания работает профессионально и качественно! Навес из поликарбоната на моей террасе выглядит отлично и защищает от погодных условий.”",
+      name: "Ольга Новикова",
+      date: "Саранск",
       img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
     },
   ];
@@ -86,9 +86,9 @@ const Testimonials = () => {
                     />
                     <div>
                       <div className="font-semibold text-gray-900">
-                        Whitney Francis
+                        {testemonial.name}
                       </div>
-                      <div className="text-gray-600">@whitneyfrancis</div>
+                      <div className="text-gray-600">{testemonial.date}</div>
                     </div>
                   </figcaption>
                 </figure>
