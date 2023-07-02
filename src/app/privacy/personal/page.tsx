@@ -1,4 +1,4 @@
-const Privacy = () => {
+const PrivacyCookies = () => {
   return (
     <article className="pt-24 sm:pt-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -9,7 +9,7 @@ const Privacy = () => {
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Политика по использованию персональных данных.
           </p>
-          <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none">
+          <div className="mt-10 max-w-xl leading-7 text-gray-600 lg:max-w-none">
             <p>
               1. Общие положения Настоящая политика обработки персональных
               данных составлена в соответствии с требованиями Федерального
@@ -34,7 +34,7 @@ const Privacy = () => {
               веб-сайта https://liteechka.su.
             </p>
           </div>
-          <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none">
+          <div className="mt-10 max-w-xl leading-7 text-gray-600 lg:max-w-none">
             <p>2. Основные понятия, используемые в Политике</p>
             <p>
               2.1. Автоматизированная обработка персональных данных — обработка
@@ -129,7 +129,7 @@ const Privacy = () => {
               уничтожаются материальные носители персональных данных.
             </p>
           </div>
-          <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none">
+          <div className="mt-10 max-w-xl leading-7 text-gray-600 lg:max-w-none">
             <p>3. Основные права и обязанности Оператора</p>
             <p>
               3.1. Оператор имеет право: — получать от субъекта персональных
@@ -169,7 +169,7 @@ const Privacy = () => {
               Законом о персональных данных.
             </p>
           </div>
-          <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none">
+          <div className="mt-10 max-w-xl leading-7 text-gray-600 lg:max-w-none">
             <p>4. Основные права и обязанности субъектов персональных данных</p>
             <p>
               4.1. Субъекты персональных данных имеют право: — получать
@@ -206,7 +206,7 @@ const Privacy = () => {
               законодательством РФ.
             </p>
           </div>
-          <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none">
+          <div className="mt-10 max-w-xl leading-7 text-gray-600 lg:max-w-none">
             <p>
               5. Оператор может обрабатывать следующие персональные данные
               Пользователя
@@ -272,4 +272,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default PrivacyCookies;

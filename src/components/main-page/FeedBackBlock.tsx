@@ -1,4 +1,4 @@
-import Button from "../utils/Button";
+import FeedbackForm from "../utils/FeedbackForm";
 
 const FeedBackBlock = () => {
   return (
@@ -11,17 +11,7 @@ const FeedBackBlock = () => {
           Заполните форму обратной связи прямо сейчас, чтобы заказать бесплатную
           консультацию.
         </p>
-        <form action="" className="max-w-md mt-10 mx-auto flex gap-4">
-          <label htmlFor="emailAdres" className="sr-only">
-            Email address
-          </label>
-          <input
-            type="text"
-            className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white ring-1 ring-inset ring-white/10 sm:text-sm sm:leading-6 placeholder:font-light placeholder:text-white/50"
-            placeholder="Введите ваш номер телефона"
-          />
-          <Button style="white" label="Отправить" />
-        </form>
+        <FeedbackForm />
         {/* <svg
           viewBox="0 0 1024 1024"
           className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[64rem] h-[64rem] pointer-events-none"

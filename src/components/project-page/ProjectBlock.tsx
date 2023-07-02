@@ -1,4 +1,7 @@
 import StepProject from "./StepProject";
+import img from "../../../public/image/drawings/1.png";
+import img2 from "../../../public/image/drawings/2.png";
+import img3 from "../../../public/image/drawings/3.png";
 
 const ProjectBlock = () => {
   const projects = {
@@ -19,24 +22,24 @@ const ProjectBlock = () => {
   const steps = [
     {
       id: 1,
-      title: "Подготовка материалов",
+      title: "Автомобильные навесы",
       description:
-        "После утверждения проекта мы закупаем все необходимые материалы и привозим их на место установки.",
-      img: "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-03.jpg",
+        "Помогают сохранить внешний вид автомобиля, продлить его срок службы и сэкономить время и средства на ремонт и обслуживание.",
+      img: img,
     },
     {
       id: 2,
-      title: "Сборка ферм",
+      title: "Террасные навесы",
       description:
-        "Мы начинаем с сборки ферм - основных элементов конструкции навеса. Фермы собираются на земле, после чего они поднимаются на высоту и крепятся к опорам.",
-      img: "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-01.jpg",
+        "Создают уютную атмосферу для отдыха, встреч с друзьями и семейных мероприятий на открытом воздухе.",
+      img: img2,
     },
     {
       id: 3,
-      title: "Установка опор",
+      title: "Мангальные и барбекю навесы",
       description:
-        "После сборки ферм мы устанавливаем опоры навеса. Опоры могут быть выполнены из металла, дерева или бетона в зависимости от требований заказчика и особенностей места установки.",
-      img: "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-02.jpg",
+        "обеспечивают защиту от погодных условий, позволяя вам готовить на открытом воздухе в любое время года.",
+      img: img3,
     },
   ];
   return (
@@ -44,15 +47,15 @@ const ProjectBlock = () => {
       <div className="w-full max-w-7xl mx-auto px-4 lg:px-8 md:px-6">
         <div className="max-w-3xl">
           <p className="text-base font-semibold leading-7 text-lime-500">
-            Установка
+            Многообразие форм
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Навеса для автомобиля
+            Типы навесов
           </h2>
           <p className="text-lg leading-8 text-gray-600 mt-6">
-            Мы установили навес из поликарбоната и металла для автомобиля на
-            частной территории, что защитило автомобиль от дождя и солнечных
-            лучей, продлив его срок службы.
+            Разные типы навесов имеют разные формы и&nbsp;размеры, поэтому важно
+            выбрать тот, который наилучшим образом соответствует вашим
+            потребностям.
           </p>
         </div>
         <div className="mt-10 border-t border-gray-900/5 sm:mt-20">

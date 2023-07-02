@@ -1,8 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import Button from "../utils/Button";
 import ElementPhoto from "./ElementPhoto";
+import { useModal } from "@/hooks/store/useModal";
 
 const BlockPresent = () => {
+  const { openModal } = useModal();
   return (
     <div className="relative isolate">
       <svg
@@ -41,12 +45,12 @@ const BlockPresent = () => {
                 современное профессиональное оборудование.
               </p>
               <div className="mt-10 flex items-center justify-start gap-x-6">
-                <Button label="Консультация" />
+                <Button label="Консультация" onClick={openModal} />
                 <Link
-                  href="/galery"
+                  href="/types-page"
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Смотреть все <span aria-hidden="true">→</span>
+                  Выбрать навес <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>

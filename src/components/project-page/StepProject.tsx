@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface StepProjProps {
   title: string;
   description: string;
-  img: string;
+  img: string | StaticImageData;
 }
 const StepProject: React.FC<StepProjProps> = ({ title, description, img }) => {
   return (

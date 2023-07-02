@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FeatureElement from "./FeatureElement";
+import Link from "next/link";
 
 const features = [
   {
@@ -7,7 +8,7 @@ const features = [
     title: "Навес для автообилей",
     description:
       "Защищает автомобиль от погодных условий, таких как солнце, дождь, снег и другие неблагоприятные погодные явления.",
-    price: "₽40,000 RUB",
+    price: "от ₽60,000 RUB",
     location: "Саранск Мордовия",
   },
   {
@@ -15,7 +16,7 @@ const features = [
     title: "Навес над крыльцом",
     description:
       "Выполненный в эстетичном стиле, способен значительно улучшить внешний вид здания, придавая ему солидность и индивидуальность.",
-    price: "₽15,000 RUB",
+    price: "от ₽15,000 RUB",
     location: "Лямбирь Мордовия",
   },
   {
@@ -23,7 +24,7 @@ const features = [
     title: "Промышленные навесы",
     description:
       "Важный элемент строительства, который широко используется на производственных и торговых объектах для защиты от погоды и создания комфортных условий.",
-    price: "₽40,000 RUB",
+    price: "от ₽140,000 RUB",
     location: "Саранск Мордовия",
   },
 ];
@@ -64,13 +65,13 @@ const FeatureSections2 = () => {
               ))}
             </ul>
             <div className="mt-8 flex pt-8">
-              <a
-                href=""
+              <Link
+                href="/galery"
                 className="font-semibold text-sm leading-6 text-lime-500"
               >
-                Смотреть примеры
+                Смотреть работы
                 <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

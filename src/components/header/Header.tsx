@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header
       className={`
-        fixed inset-x-0 top-0 z-50 bg-white transition duration-500
+        fixed inset-x-0 top-0 z-40 bg-white transition duration-500
         ${scrollY > 100 && "shadow-sm"}
         ${scrollY > 100 && "bg-white/[82%]"}
         ${scrollY > 100 && "backdrop-blur-sm"}
@@ -26,7 +26,7 @@ const Header = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Logo size={18} />
+          <Logo size={18} ru />
         </div>
         <div className="flex lg:hidden">
           <button

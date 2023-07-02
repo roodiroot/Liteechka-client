@@ -1,60 +1,61 @@
 import Image from "next/image";
+import { g1, g2, g3, g5, m1, m2, m3, m4, m5 } from "@/utility/mediaCombain";
 
 const Testimonials = () => {
   const testemonials = [
     {
-      text: "“Отличный навес из поликарбоната! Установка прошла быстро и качественно. Рекомендую компанию!”",
+      text: "“Отличный навес из поликарбоната! Установка прошла быстро и качественно, без мусора. Рекомендую компанию “Литеечка”!”",
       name: "Александр Иванов",
       date: "Зубова Поляна",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: m1,
     },
     {
       text: "“Компания предоставила профессиональный сервис и установила надежный навес на моей террасе. Очень доволен результатом!”",
       name: "Екатерина Смирнова",
       date: "Краснослободск",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: g1,
     },
     {
-      text: "“Надежный навес из поликарбоната для моего автомобиля. Компания работает профессионально и качественно!”",
+      text: "“Надежный навес из поликарбоната для моего автомобиля. Компания работает профессионально и качественно! Спасибо “Литеечка”!”",
       name: "Михаил Петров",
       date: "Инсар",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: m2,
     },
     {
-      text: "“Компания предоставила отличный сервис и установила качественный навес на моем дачном участке. Рекомендую!”",
+      text: "“Компания предоставила отличный и слаженный сервис и установила качественный навес на моем дачном участке. Рекомендую “Литеечку”!”",
       name: "Анна Кузнецова",
       date: "Ковылкино",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: g2,
     },
     {
-      text: "“Профессиональная установка надежного навеса из поликарбоната на моей террасе. Компания работает качественно и ответственно!”",
+      text: "“Профессиональная установка надежного навеса из поликарбоната на моей террасе. Компания работает качественно и ответственно подходит к работе! Спасибо “Литеечка”!”",
       name: "Дмитрий Соколов",
       date: "Рузаевка",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: m3,
     },
     {
-      text: "“Заказал навес из поликарбоната для своего автомобиля в компании и не пожалел! Качественный материал и профессиональный монтаж.”",
+      text: "“Заказал навес из поликарбоната для своего автомобиля в компании “Литеечка” и не пожалел! Качественный материал и профессиональный монтаж.”",
       name: "Наталья Михайлова",
       date: "Темников",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: g3,
     },
     {
       text: "“Компания предоставила отличный сервис и установила надежный навес на моей террасе в короткие сроки. Рекомендую!”",
       name: "Илья Федоров",
       date: "Ромоданово",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: m4,
     },
     {
       text: "“Надежный навес из поликарбоната для моего дачного участка. Установка прошла быстро и качественно. Спасибо компании!”",
       name: "Сергей Козлов",
       date: "Лямбирь",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: m5,
     },
     {
       text: "“Компания работает профессионально и качественно! Навес из поликарбоната на моей террасе выглядит отлично и защищает от погодных условий.”",
       name: "Ольга Новикова",
       date: "Саранск",
-      img: "https://cdn.fotosklad.ru/unsafe/06e87279ac7c4fcbb82d282b5ee9f4b2/image.jpg",
+      img: g5,
     },
   ];
   return (
@@ -65,13 +66,16 @@ const Testimonials = () => {
             Отзывы
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Прочтите, что говорят реальные люди о наших услугах
+            Прочтите, что говорят реальные люди о наших навесах
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:mx-0 lg:max-w-none">
           <div className="-mt-8 sm:-mx-4 sm:columns-2 lg:columns-3 sm:text-[0px]">
             {testemonials.map((testemonial) => (
-              <div className="pt-8 sm:inline-block sm:w-full sm:px-4">
+              <div
+                key={testemonial.name}
+                className="pt-8 sm:inline-block sm:w-full sm:px-4"
+              >
                 <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
                   <blockquote className="text-gray-600">
                     <p>{testemonial.text}</p>

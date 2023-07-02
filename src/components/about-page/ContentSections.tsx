@@ -55,13 +55,13 @@ const ContentSections = () => {
                 Взгляните внутрь нашей компании
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                &laquo;Liteechka&raquo; занимается производством и&nbsp;монтажом
+                &laquo;Литеечка&raquo; занимается производством и&nbsp;монтажом
                 надежных навесов из&nbsp;поликарбоната, предоставляя услуги
                 по&nbsp;проектированию, консультации в&nbsp;Республике Мордовия.
               </p>
               <div className="mt-10 max-w-xl leading-7 text-gray lg:max-w-none ">
                 <p>
-                  &laquo;Liteechka&raquo; была основана в&nbsp;2018&nbsp;году.
+                  &laquo;Литеечка&raquo; была основана в&nbsp;2018&nbsp;году.
                   Она начала свою деятельность с&nbsp;небольшого монтажного
                   цеха, занимавшегося установкой навесов из&nbsp;поликарбоната
                   на&nbsp;территории республики. С&nbsp;течением времени
@@ -71,7 +71,7 @@ const ContentSections = () => {
                 </p>
                 <dl className="mt-10 max-w-xl lg:max-w-none text-gray-600 text-base leading-7">
                   {materials.map((m) => (
-                    <div className="relative pl-10 mt-8">
+                    <div key={m.id} className="relative pl-10 mt-8">
                       <m.Icon
                         className="absolute w-5 h-5 top-1 left-1 text-lime-500"
                         aria-hidden="true"
@@ -85,7 +85,7 @@ const ContentSections = () => {
                 </dl>
               </div>
               <div className="mt-8">
-                Компания &laquo;Liteechka&raquo; известна своим качественным
+                Компания &laquo;Литеечка&raquo; известна своим качественным
                 продуктом и&nbsp;высоким уровнем обслуживания. Она работает
                 с&nbsp;клиентами из&nbsp;различных отраслей, включая частных
                 клиентов, архитекторов, строительные компании и&nbsp;торговые
@@ -95,7 +95,7 @@ const ContentSections = () => {
                 Гарантия качества.
               </h2>
               <p className="mt-6">
-                Кроме того, компания &laquo;Liteechka&raquo; предоставляет
+                Кроме того, компания &laquo;Литеечка&raquo; предоставляет
                 бесплатный замер и&nbsp;консультацию для своих клиентов, что
                 помогает им&nbsp;выбрать наиболее подходящее решение для своих
                 нужд. Также компания дает гарантию на&nbsp;свои проекты

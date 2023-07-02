@@ -73,7 +73,7 @@ const ScreenshotSection = () => {
               </p>
               <dl className="mt-10 max-w-xl lg:max-w-none text-gray-600 text-base leading-7">
                 {materials.map((m) => (
-                  <div className="relative pl-10 mt-8">
+                  <div key={m.id} className="relative pl-10 mt-8">
                     <m.Icon
                       className="absolute w-5 h-5 top-1 left-1 text-lime-500"
                       aria-hidden="true"

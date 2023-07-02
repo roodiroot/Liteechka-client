@@ -1,9 +1,9 @@
-import ProjectBlock from "@/components/project-page/ProjectBlock";
+import TabsBlock from "@/components/project-page/TabsBlock";
 
 const ProjectObserver = () => {
   return (
     <div className="mt-[74xp]">
-      <ProjectBlock />
+      <TabsBlock />
     </div>
   );
 };
